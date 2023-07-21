@@ -11,9 +11,11 @@
     width: 25%;
     border: 2px solid #fff;
     padding: 5px;
+    border-radius: 10px;
     height: 40px;
     background-color: #e0218a;
     color: #fff;
+    
 }
 
 html{
