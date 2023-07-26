@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function add7(num) {
+            num = num + 7;
+            console.log(num);
+        }
+        add7(2);
+
+        function multiply(a,b){
+            console.log(a * b);
+        }
+        multiply(10,4);
+
+        function capitalize(string){
+            const firstChar = string.charAt(0).toUpperCase();
+
+            const restOfString = string.substring(1);
+
+            const fullString =  firstChar + restOfString;
+
+            return fullString;
+        }
+
+        console.log(capitalize("faith"));
+
+
+        function lastLetter(string) {
+
+            return string.charAt(string.length - 1);
+        }
+
+        console.log(lastLetter("fluffy"));
+       
+    </script>
+</body>
+</html>
