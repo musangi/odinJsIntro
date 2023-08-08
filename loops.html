@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function toUpper(string){
+            return string.toUpperCase();
+        }
+
+        function lCat(cat){
+            return cat.startsWith("L");
+        }
+
+        const cats = ["Leopard", "Several", "Jaguar", "Tiger", "Caracal", "Lion"];
+// loops though each cat and prints the results
+        for (const cat of cats) {
+            console.log(cat);
+        }
+// converts array to uppercase
+        const upperCats = cats.map(toUpper);
+        console.log(upperCats);
+
+// filters out cats starting with letter L
+        const filtered = cats.filter(lCat);
+        console.log(filtered);
+
+
+    </script>
+</body>
+</html>
