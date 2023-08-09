@@ -28,7 +28,20 @@
         const filtered = cats.filter(lCat);
         console.log(filtered);
 
+        const pets = ["Pete" , "Biggles", "Jasmine", "Bunny"];
 
+        let myFavoritePets = "My pets are called ";
+
+        for(let i = 0; i < pets.length; i++){
+            if(i == pets.length -1) {
+                //we add and at the end of the array
+                myFavoritePets += `and ${pets[i]}.`;
+            } else {
+                myFavoritePets += `${pets[i]}, `;
+            }
+            
+        }
+        console.log(myFavoritePets);
     </script>
 </body>
 </html>
