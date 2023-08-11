@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do While Loop</title>
+</head>
+<body>
+    <script>
+        const cats = ["Happy","Pete", "Biggles" ,"Jasmine"];
+
+        let myFavouriteCats = "My favourite cats are ";
+
+        let i = 0;
+
+        do{
+            if(i === cats.length - 1) {
+                myFavouriteCats += `and ${cats[i]}.`;
+            } else {
+                myFavouriteCats += `${cats[i]}, `;
+            }
+            i++;
+        } while(i < cats.length);
+
+        console.log(myFavouriteCats);
+    </script>
+</body>
+</html>
