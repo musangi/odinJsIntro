@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+</head>
+<body>
+    <h1>Manipulating DOM Objects</h1>
+    <div id="container">
+
+    </div>
+
+    <script>
+        const container = document.querySelector('#container');
+
+        const content = document.createElement('div');
+        content.classList.add('content');
+        content.textContent = "This is glorious text-content.";
+        
+
+        container.appendChild(content);
+
+        const para = document.createElement('p');
+        para.style.cssText = "color: red;";
+        para.textContent = "Hey, I'm red!";
+        container.appendChild(para);
+
+        const header = document.createElement('h3');
+        header.style.cssText = "color: blue;";
+        header.textContent = "Hey, I'm blue!";
+        container.appendChild(header);
+
+        const pink = document.createElement('div');
+        pink.style.cssText = "background-color: pink; border: 1px solid black;";
+
+        const h1 = document.createElement('h1');
+        h1.style.cssText = "color:black; font-size:16px;";
+        h1.textContent = "I'm in a div";
+
+        const paragraph = document.createElement('p');
+        paragraph.style.cssText = "color:black; font-size:16px;";
+        paragraph.textContent = "ME TOO";
+        pink.appendChild(h1);
+        pink.appendChild(paragraph);
+        container.appendChild(pink);
+    </script>
+</body>
+</html>
