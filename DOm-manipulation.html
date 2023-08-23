@@ -9,8 +9,9 @@
     <h1>Manipulating DOM Objects</h1>
     <div id="container">
 
-    </div>
 
+    </div>
+    <button id="btn">Click ME</button>
     <script>
         const container = document.querySelector('#container');
 
@@ -44,6 +45,11 @@
         pink.appendChild(h1);
         pink.appendChild(paragraph);
         container.appendChild(pink);
+
+        btn.addEventListener("click", function(e) {
+            e.target.style.backgroundColor ='blue';
+            console.log(e.target);
+        })
     </script>
 </body>
 </html>
