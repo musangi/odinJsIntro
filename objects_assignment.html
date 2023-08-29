@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+</head>
+<body>
+    <script>
+        // task 1
+        let user = {
+            name: "John",
+            surname: "Smith",
+            name:"Pete",
+        };
+        delete user.name;
+
+        // Task 2
+
+    let schedule = {};
+
+    alert(isEmpty(schedule)); // true
+
+    schedule["8:30"] = "get up";
+
+    alert(isEmpty(schedule)); // false
+
+    function isEmpty(obj) {
+        for (let key in obj) {
+            // if the loop has started, there is a property
+            return false;
+        }
+        return true;
+    }
+
+    // task 3
+
+    let salaries = {
+        John : 100,
+        Ann: 160,
+        Pete: 130
+    };
+
+    let sum = 0;
+    for ( let key in salaries) {
+        sum += salaries[key];
+    };
+
+    alert(sum);
+
+    // task 3
+
+    // Create a function multiplyNumeric(obj) that multiplies all numeric property values of obj by 2.
+
+    // before the call
+    let menu = {
+        width: 200,
+        height: 300,
+        title: "My menu"
+    };
+    function multiplyNumeric(menu) {
+        for (let key in menu) {
+            if(typeof menu[key] == 'number'){
+                menu[key] *= 2;
+            }
+        }
+    }
+
+    
+    </script>
+</body>
+</html>

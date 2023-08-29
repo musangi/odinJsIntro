@@ -7,14 +7,22 @@
 </head>
 <body>
     <script>
-        let user = {
-            name: "Musangi",
-            age: 27,
+        // let user = {
+        //     name: "Musangi",
+        //     age: 27,
+        // };
+
+        // let key = prompt('What do you want to know about the user?', "name");
+
+        // alert(user[key]);
+
+        let fruit = promt("Which fruit to buy?", "apple");
+
+        let bag = {
+            [fruit]: 5,
         };
 
-        let key = prompt('What do you want to know about the user?', "name");
-
-        alert(user[key]);
+        alert(bag.apple)
     </script>
 </body>
 </html>
